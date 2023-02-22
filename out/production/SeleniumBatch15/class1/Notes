@@ -1,0 +1,21 @@
+Why do we need to do testing
+    - eliminates bugs
+    - ensures products are good quality
+
+What is Selenium
+    - its a tool that helps you test websites automatically
+    - it supports popular browsers like chrome, firefox, safari, edge
+    - also supports diff languages like Java, Python, C# ect.
+
+"Please verify that you're human" verification on websites
+    - this is a protection against automation tools (like selenium)
+
+difference between get() and navigate()
+    - they both allow us to open a website
+    - navigate() is also ables to go back/forward/refresh whereas get() can't do that
+    - get() will wait until the whole webpage has loaded but navigate() will not wait
+
+difference between close() and quit()
+    - close() will close the current tab only
+    - quit() will close the whole browser/window
+
