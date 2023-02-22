@@ -10,6 +10,8 @@ What is Selenium
 "Please verify that you're human" verification on websites
     - this is a protection against automation tools (like selenium)
 
+*****Every project that is created has to be configured with JAR files and drivers.*****
+
 difference between get() and navigate()
     - they both allow us to open a website
     - navigate() is also ables to go back/forward/refresh whereas get() can't do that
@@ -18,4 +20,13 @@ difference between get() and navigate()
 difference between close() and quit()
     - close() will close the current tab only
     - quit() will close the whole browser/window
+
+Steps to opening a website:
+    1. System.setProperty -> set the path to chrome driver
+    2. create instance of WebDriver
+    3. use .get("url") or .navigate().to("url") -> to open the website
+
+Become good at seeing errors as a tester
+    error: the driver executable doesn't exist at the path .......
+        - means your path to the driver (setProperty()) is not set up correctly
 
