@@ -1,0 +1,33 @@
+DOM = when you 'inspect' a website (document object model)
+Web Element = everything you see on a website
+
+to take a look at the code thats actually making a web element when inspecting
+- click top left icon and then highlight the web element
+
+in selenium when we need to find a certain web element we should use locators
+
+why do we need locators
+    when we need to find a particular web element we use locators
+
+Locators
+- there are 8 locators we can use
+    - id, name, class, Tagname, xpath, linktext, partialLinkText, CSS
+    - (you can see these all as methods after ".findElement(By.)"
+
+    - to use linktext, when we inspect, there must be a link and there must be text
+      and inside the method parameters, we must pass the text
+
+    - to use partialLinkText, the condition is the same but inside the method parameters,
+      we don't HAVE to pass the full text, we are allowed to pass a part of the text
+
+why are there so many locators
+    - sometimes there could be a locator with a duplicate value
+    - sometime the developers might not provide you with all the locators
+
+Important things when selecting a locator
+    - if a attribute has a number in it, it's better to avoid that and use a different
+      locator because those numbers might be dynamic meaning they could change (You should
+      want to use an attribute that final and works all the time)
+
+Note:
+    - any <a> tag in html code means there is a link somewhere in there
