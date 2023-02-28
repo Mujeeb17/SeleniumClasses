@@ -1,0 +1,31 @@
+Components of selenium
+    - Selenium IDE (v1) (didn't support programming languages)
+    - Selenium RC (v2) (supported programming languages but was slower)
+    - Selenium WebDriver (v3) ---> (v4.x) (what we are learning)
+    - Selenium Grid
+
+Open source tool
+    - it is visible to public
+    - it is customizable
+    - you can contribute
+    - open source doesn't mean it's free
+
+Free License Tool
+    - doesn't mean its open source
+    - everyone can use it (like Selenium)
+
+- Selenium doesn't support UNIX operating systems
+- Selenium supports multiple programming languages
+
+W3C
+    - The same way World Health Org. has rules and standardization for
+      health and safety requirements, the W3C is like the same thing for the
+      world wide web
+    - stands for "World Wide Web Consortium"
+
+- Selenium doesn't validate tests it only automates the application
+    - when we want to validate things, we are going to have to
+      write java code like if conditions on our own
+    - this means Selenium is not a test automation tool, its just an automation tool
+
+- the drivers (chromedriver) facilitates the code

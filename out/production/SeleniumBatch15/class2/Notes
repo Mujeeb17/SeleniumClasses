@@ -20,8 +20,11 @@ Locators
     - to use partialLinkText, the condition is the same but inside the method parameters,
       we don't HAVE to pass the full text, we are allowed to pass a part of the text
 
+    - to use Tagname, all you need is the tag but this is very prone to being duplicated
+      so this one is better when we need to find multiple web elements
+
 why are there so many locators
-    - sometimes there could be a locator with a duplicate value
+    - sometimes there could be a locator with a duplicate value (we shouldn't use those)
     - sometime the developers might not provide you with all the locators
 
 Important things when selecting a locator
@@ -31,3 +34,4 @@ Important things when selecting a locator
 
 Note:
     - any <a> tag in html code means there is a link somewhere in there
+    - if you want to search things when you inspect on google, press ctrl+f

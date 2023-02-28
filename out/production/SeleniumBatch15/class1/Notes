@@ -30,3 +30,4 @@ Become good at seeing errors as a tester
     error: the driver executable doesn't exist at the path .......
         - means your path to the driver (setProperty()) is not set up correctly
 
+- Selenium doesn't support UNIX operating systems
