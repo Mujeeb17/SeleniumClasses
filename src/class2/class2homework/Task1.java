@@ -34,5 +34,8 @@ public class Task1 {
 
         //clicking on register
         driver.findElement(By.cssSelector("input[value=Register]")).click();
+
+        //closing browser
+        driver.quit();
     }
 }

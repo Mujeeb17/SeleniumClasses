@@ -13,7 +13,7 @@ close the pop up
 close the browser
 TIP for HW2:
 just fill in text boxes or button, no need to deal with other webElements
-also u will need a Thread.sleep after clcikng on create new account 🙂
+also u will need a Thread.sleep after clicking on create new account
 we will discuss "WHY" in future
  */
 public class FBTask2 {
@@ -41,8 +41,6 @@ public class FBTask2 {
 
         driver.findElement(By.name("websubmit")).click();
         Thread.sleep(8000);
-
-
 
         //there's no popup?
 
