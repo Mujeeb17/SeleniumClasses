@@ -1,0 +1,65 @@
+Xpath locator
+    - very common locator
+    - most versatile locator
+    - can use any attribute
+    - press ctrl+f when inspecting on google so when you put in the
+      syntax for the Xpath, it will highlight in green to show it works but
+      more importantly, it should say '1 of 1' because the locator should be unique
+
+    - 2 kinds of Xpath
+        - Relative Xpath: general syntax is: //tagname[@attribute='attribute value']
+          ("get the tag name which has the attribute and its value is "attribute value")
+
+                    Example for <input name = "abra", class = "fghjlk"/>
+
+                    //input[@name='abra']
+
+              - Syntax for Xpath (finding by text): //tagname[text()='text value']
+                    (get the tagname which has the text "text value")
+
+                    Example for <button id="tro", class="fyo"> hello </button>
+
+                    //button[text()='hello']
+
+              - Syntax for Xpath (finding by contains method): //tagname[contains(@attribute, 'partial attribute value')]
+                    (get the tagname which has attribute whose value contains 'partial value of attribute')
+
+                    Example for <input email="how are you i am fine , thankyou" id="idhjk"/>
+
+                    //input[contains(@email, 'how are you')]
+
+                    - contains can be used in the scenario where the attribute text is long or
+                      when part of the value is dynamic (usually with happens with numbers)
+
+              - Syntax for combining the 2 above methods of Xpath: //tagname[contains(text()), "partial text value"]
+
+              Example for facebook's create new account button
+
+              //a[contains(text(), 'Create new')]
+
+        - Absolute Xpath: refers to the exact pinpoint of the location of the element but it
+          is usually avoided. as a little change in DOM can change that location.
+
+          '/' means go to child
+          Example: /html/body/a/input
+          Example using indexes: /html/body/div/input[3]
+
+- In the situation where there is no unique Xpath for a web element, we use indexes.
+  for example, if google inspect is saying 1 of 3. after the regular syntax for xpath, type this: [3]
+
+  //tagname[@attribute='attribute value'][3]
+
+  if you accessing the 3rd instance of that path.
+    - note the index is NOT ZERO BASED
+
+
+Tagname locator
+    - all thats needed is just the tag name
+    - useful in scenarios where you want to get multiple elements with the same tag name.
+
+    - task: go to amazon and get all links
+
+Notes:
+    - .clear() deletes text in the text box
+    - .getText() gets text if there is any
+    - .getAttribute gets the vakue of the attribute
