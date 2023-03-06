@@ -42,7 +42,7 @@ Radio button (check boxes)
     - Ex: (male or female checkboxes)
 
 Functions we can use in selenium
-    - returns boolean: isEnabled() checks if the radio button can be selected or not(if not selectable, usually it is greyed out)
+    - returns boolean: isEnabled() checks if it's clickable (can be selected or not, if not selectable, usually it is greyed out)
     - returns boolean: isDisplayed() checks if web element is displayed on the page or not
     - returns boolean: isSelected() checks if the radio button is selected or not
 
