@@ -1,0 +1,5 @@
+- Architecture of Selenium refers to the relationship between all the interfaces and classes
+  like which interface extends another interface. which class implements those interfaces
+
+- EdgeDriver and ChromeDriver extends ChromiumDriver
+-

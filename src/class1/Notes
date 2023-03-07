@@ -31,3 +31,10 @@ Become good at seeing errors as a tester
         - means your path to the driver (setProperty()) is not set up correctly
 
 - Selenium doesn't support UNIX operating systems
+- WebDriver interface extends SearchContext interface
+- RemoteWebDriver implements WebDriver
+- EdgeDriver and ChromeDriver extends ChromiumDriver
+    - note because we are using an older version of selenium (3. something),
+      this relationship won't show on IntelliJ, but it will if you
+      check the Selenium Github because thats the latest version
+
