@@ -1,0 +1,54 @@
+Right approach when it comes to multiple checkboxes
+     - inspect them in the DOM
+     - write locater in a way its able to select all available checkboxes
+       (what is common between all the checkboxes in the DOM?)
+     - use .findElements() to get all the checkboxes
+     - iterate through the list
+     - while iterating, look for your desired checkbox
+     - if condition to make the selection
+
+Dropdowns
+    - 2 types of dropdowns: single-select and multi-select
+    - the Select class helps us interact with dropdowns
+        - in order to be able to use this class, the dropdown
+          must be made in the DOM using the SELECT tag
+
+Approach for dropdowns
+    - inspect dropdown
+    - check if it has the select tag
+    - write the locator to find the web element dropdown
+    - declare an object of Select class
+    - use methods from select class to select the desired option
+
+Alerts & Switch to commands
+    - sometimes alerts pop up on a page where you can't click anywhere
+      else on the web page unless you answer the alert
+    - some of these are not inspectable on the DOM
+    - 3 types of alerts:
+        - java script alerts (like the alerts that give you 1 or
+          2 options: "OK" "Cancel") (not inspectable)
+        - html based alerts (inspectable)
+        - window based (like when you have to choose a file and your
+          explorer page pops up) (not inspectable)
+
+    - javascript alerts:
+        - simple alerts
+            - The alert just has info and you just need to click "OK"
+        - prompt alert
+            - you must click either "OK" or "Cancel"
+        - confirmation alert
+            - you must write something manually inside the alert
+
+        - all these alerts are dealt with in the same way (Switch To commands):
+        1. click on the element that gives you the alert
+
+Switching the focus of the driver
+    - .getWindowHandle() returns the handle of the current window that is focused
+    - .getWindowHandles() returns the handles of all the windows that are opened up (in a Set) (random order)
+    - .switchTo().window(handle)
+    - because when we getWindowHandles() returns an unordered Set, we have to confirm that
+      we are on the tab we want by comparing the titles:
+    1. while iterating, driver.switchTo()
+    2. getTitle()
+    3. if Title is (the title of your desired tab), then .switchTo(handle)
+

@@ -35,3 +35,5 @@ Important things when selecting a locator
 Note:
     - any <a> tag in html code means there is a link somewhere in there
     - if you want to search things when you inspect on google, press ctrl+f
+    - id attribute should always be unique
+    - class attribute can have multiple values
