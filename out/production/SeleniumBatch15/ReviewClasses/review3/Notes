@@ -1,0 +1,7 @@
+Xpath
+    - //tagName[@attribute='value']
+    - //tagName[text()='innerText']
+    - //tagName[contains(@attribute, 'partial attribute value')]
+    - //tagName[contains(text(), 'partial inner text')]
+
+    - //tagName[@attribute='value' and @attribute='value']

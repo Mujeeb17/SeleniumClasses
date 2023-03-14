@@ -14,6 +14,9 @@ Xpath locator
 
                     //input[@name='abra']
 
+              - Syntax for Xpath (finding by 2 attributes)
+                    //tagName[@attribute='value' and @attribute='value']
+
               - Syntax for Xpath (finding by text): //tagname[text()='text value']
                     (get the tagname which has the text "text value")
 
@@ -37,14 +40,16 @@ Xpath locator
 
               //a[contains(text(), 'Create new')]
 
+              - You can combine all the above syntax in the Xpath using 'and', there's no limitation
+
         - Absolute Xpath: refers to the exact pinpoint of the location of the element but it
-          is usually avoided. as a little change in DOM can change that location.
+          is usually avoided. as a little change in DOM can change that location and it wont work anymore
 
           '/' means go to child
           Example: /html/body/a/input
           Example using indexes: /html/body/div/input[3]
 
-- In the situation where there is no unique Xpath for a web element, we use indexes.
+- In the situation where there is no unique Xpath for a web element, we use indexes (But should be avoided).
   for example, if google inspect is saying 1 of 3. after the regular syntax for xpath, type this: [3]
 
   //tagname[@attribute='attribute value'][3]
@@ -62,4 +67,14 @@ Tagname locator
 Notes:
     - .clear() deletes text in the text box
     - .getText() gets text if there is any
-    - .getAttribute gets the vakue of the attribute
+    - .getAttribute() gets the value of the attribute
+
+    - if given a task to write the Xpath but you were not given the attribute
+      //tagName['value']
+
+    -Xpath function: //tagName[starts-with(@attribute, 'value')]
+
+    - whenever there is a tag name: svg
+      use //*[local-name()='svg']//*[name()='childTagName']
+
+      svg is not supported like the other tag names

@@ -55,6 +55,7 @@ Implicit wait
 Explicit wait
     - when the code for a specific text for ex. is disabled, but when we click
       a button, the text is now enabled and we can see it
+    - not global
     - explicit wait are conditional waits
         - (wait for element to be visible)
         - (wait for element to be clickable)
@@ -67,3 +68,11 @@ Note:
     - never use Thread.sleep anymore
     - implicit wait: when code is dynamically generated
     - explicit wait: when code is there the whole time but its disabled
+    - global means its implemented automatically to the whole class
+
+    - sometimes Selenium has a bug that doesn't open the specified url,
+      you must add the following lines of code
+
+      ChromeOptions options = new ChromeOptions();
+      options.addArguments("--remote-allow-origins=*");
+      WebDriver driver = new ChromeDriver(options);

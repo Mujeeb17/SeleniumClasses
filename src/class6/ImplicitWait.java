@@ -19,8 +19,8 @@ public class ImplicitWait {
         //the "first name" text box
 //        driver.findElement(By.name("firstname")).sendKeys("abracadabra");
 
-        driver.findElement(By.name("firstname")).sendKeys("Bobbeebee");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.findElement(By.name("firstname")).sendKeys("Bobbeebee");
 
     }
 }
