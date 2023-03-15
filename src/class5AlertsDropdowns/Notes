@@ -1,6 +1,6 @@
 Right approach when it comes to multiple checkboxes
      - inspect them in the DOM
-     - write locater in a way its able to select all available checkboxes
+     - write locator in a way its able to select all available checkboxes
        (what is common between all the checkboxes in the DOM?)
      - use .findElements() to get all the checkboxes
      - iterate through the list

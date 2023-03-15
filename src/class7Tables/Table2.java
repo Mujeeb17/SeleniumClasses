@@ -1,4 +1,4 @@
-package class7;
+package class7Tables;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
