@@ -1,0 +1,11 @@
+Tables
+    - tables on a website use <table> tagname
+    - <thead> is the first row of the table
+    - <tbody> holds every other row in the table which are <tr>
+    - it is possible that the first row is included in <tbody>
+
+    - 3 levels of access:
+        - whole table (but it will be in a single String)
+        - row level access (all rows in the table are stored individually)
+        - column level access (all columns in the table are stored individually)
+    - the major difference is the Xpath
