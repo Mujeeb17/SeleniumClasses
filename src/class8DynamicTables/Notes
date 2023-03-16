@@ -1,0 +1,9 @@
+- Tables can be static or dynamic
+- static tables don't allow us to input any data or change anything
+
+Dynamic tables
+    - changes can be made to the table = dynamic
+    - in terms of code, we deal with static/dynamic tables the same way but
+      logic is usually different
+    - never assume things when writing the code always check your logic by
+      using the DOM especially with loops
