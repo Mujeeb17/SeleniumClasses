@@ -1,0 +1,29 @@
+- Tables with pagination
+    - tables have more than one pages. (clicking on page 2 to see more entries)
+
+- Approach:
+    - get all the values of the table on first page
+    - look for desired id
+    - if found, click the checkbox, else, continue till all values are checked
+    - if all values are checked but still not found, click on next page and repeat
+
+Stale element exception
+    - possible reasons: page refreshed, element was discarded
+
+- js executer is used for things like:
+    - scroll
+    - drag and drop
+    - click
+    - highlight certain WebElements
+
+    - always use executeScript() method
+    - script is code that is going to be exceuted in js.
+
+Actions Class
+    - sometimes a regular click won't work on selenium so there are more options like Actions Class (or js executor)
+    - has way more options when interacting with a site like
+        - click and hold
+        - double click
+        - move your cursor to a specific element
+
+- copy notes from canvas
