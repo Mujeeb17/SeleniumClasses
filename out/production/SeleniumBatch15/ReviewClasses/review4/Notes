@@ -1,0 +1,9 @@
+- In Xpath, if you want to reach a parent web element, use this:
+  parent::tagname
+
+  for ex: //input[@name='username']/parent::div
+
+  There's also the following commands:
+  - following-sibling::tagname
+  - preceding-sibling::tagname
+  - ancestor::tagname (this can go further than parent::tagname)
