@@ -30,4 +30,14 @@ Actions Class
     - usually use perform() at the end of a line
 
 - when we want to upload a file, use sendKeys() method
-- copy notes from canvas
+    - this only works when the tag name in the DOM for the element is <input>
+
+Screenshots
+    - There is an interface called TakesScreenshot which provides
+      getScreenshotAs method and which selenium uses to take screenshot.
+
+    - So to take screenshot of the page we have to cast our driver object to TakesScreenshot interface type:
+      TakesScreenshot scrShot =(TakesScreenshot)webdriver;
+
+      Note: casting is a process of converting 1
+      dataType/objectType to another

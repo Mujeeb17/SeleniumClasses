@@ -20,6 +20,10 @@ Approach for dropdowns
     - declare an object of Select class
     - use methods from select class to select the desired option
 
+    - if there's no select tag, write the locator and click on it
+    - then treat it as a normal web element, just click on your desired
+      option from the drop down
+
 Alerts & Switch to commands
     - sometimes alerts pop up on a page where you can't click anywhere
       else on the web page unless you answer the alert
