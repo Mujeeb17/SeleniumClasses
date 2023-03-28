@@ -45,6 +45,7 @@ Implicit wait
       takes to load.
     - implicit wait is going to wait for the web element to be found until the timeout
         - manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            - after Selenenium 4 we use: manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
         - above code is saying we are giving it 20 seconds to find
           the web element before it gives the error: Element not found
         - 20 second is the standard
@@ -70,6 +71,8 @@ Explicit wait
 
 Note:
     - .switchTo().defaultContent() goes back to the parent website (original/first website)
+        - this is needed when switching from Iframe to Iframe, you must switch back to the
+          parent frame if you want to switch to another Iframe
     - never use Thread.sleep anymore
     - implicit wait: when code is dynamically generated
     - explicit wait: when code is there the whole time but its disabled

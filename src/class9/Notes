@@ -27,7 +27,8 @@ Actions Class
         - move your cursor to a specific element (hovering your mouse)
         - right click (use contextClick() method)
     - Actions class is mostly used for performing mouse actions
-    - usually use perform() at the end of a line
+
+    - ALWAYS use perform() at the end of a line
 
 - when we want to upload a file, use sendKeys() method
     - this only works when the tag name in the DOM for the element is <input>
@@ -35,6 +36,7 @@ Actions Class
 Screenshots
     - There is an interface called TakesScreenshot which provides
       getScreenshotAs method and which selenium uses to take screenshot.
+        - its implementation is provided by RemoteWebDriver class
 
     - So to take screenshot of the page we have to cast our driver object to TakesScreenshot interface type:
       TakesScreenshot scrShot =(TakesScreenshot)webdriver;

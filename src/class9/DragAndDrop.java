@@ -30,6 +30,6 @@ public class DragAndDrop {
         //use Actions class to drag and drop
         Actions actions = new Actions(driver);
 
-        actions.dragAndDrop(dragable, drop);
+        actions.dragAndDrop(dragable, drop).perform();
     }
 }
